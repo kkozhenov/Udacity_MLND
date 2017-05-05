@@ -11938,9 +11938,9 @@ Standard deviation of prices: $165,171.13
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>RM: more rooms should lead to <strong>higher price</strong></li>
-<li>LSTAT: more "lower class" homeowners should mean <strong>lower price</strong></li>
-<li>PTRATIO: higher ratio means fewer teachers, which should drive home <strong>prices down</strong></li>
+<li>RM: more rooms should lead to <strong>higher price</strong>. RM positively correlates with MEDV because bigger houses should cost more.</li>
+<li>LSTAT: more "lower class" homeowners should mean <strong>lower price</strong>. LSTAT negatively correlates with MEDV because more lower class people in the neighbourhood, the less attractive this area for rich people. If the whole neighborhood has only lower class homes, that would be weird to see 1 expensive house there.</li>
+<li>PTRATIO: higher ratio means fewer teachers, which should drive home <strong>prices down</strong>. When considering buying a house, families consider education for their kids. If ratio of students to teachers is high, that means there are not enough teachers in the area, and the house should have smaller value.</li>
 </ul>
 
 </div>
@@ -12072,8 +12072,8 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Model has a coefficient of determination, R^2, of 0.923.
-Whether this perfomance is good or no will depend on the context. If we are dealing with healthcare problems, we need higher perfomance, but for other applications this might be just enough.</p>
+<p><strong>Answer:</strong> Model has a coefficient of determination, R^2, of 0.923. In general, I would consider this perfomance good.
+In reality, whether this perfomance is good or no will depend on the context. If we are dealing with healthcare problems, we need higher perfomance, but for other applications this might be just enough.</p>
 
 </div>
 </div>
@@ -13762,7 +13762,7 @@ From the graph above it looks like both max_depth = 4 and max_depth = 5 generali
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Grod search technique allows to find best combination of parameters for a particular model. It checks every possible combination of parameters and pick the best one based on perfomance metric.</p>
+<p><strong>Answer: </strong> Grid search technique allows to find best combination of parameters for a particular model. For each model parameter that we are interested to tune, we provide a list of values we want to check. Grid search will calculate a Cartesian product of those parameter values and then run multiple models with every combination from that product. In the end it will pick the best combination based on the perfomanse on the validation set.</p>
 
 </div>
 </div>
